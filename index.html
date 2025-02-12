@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="ArMan DS" />
+        <meta name="description" content="Simple to do list" />
+        <meta name="keywords" content="JavaScript, HTML, CSS" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>To-Do List</title>
+
+        <link rel="icon" href="assets/imgs/todo-list-svgrepo-com.svg" />
+
+        <link rel="stylesheet" href="assets/styles/style.css" />
+
+        <!-- jquery cdn -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <!-- animate.css cdn -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <!-- fontawsome cdn -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- font cdn-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- scripts ref-->
+        <script src="assets/scripts/app.js" defer type="module"></script>
+    </head>
+    <body>
+        <header class="animate__animated animate__fadeInDown">
+            To-Do List
+            <i class="fa-solid fa-list-check" style="margin-left: 5px"></i>
+        </header>
+        <nav>
+            <ul id="theme-mode">
+                <li
+                    id="dark-mode"
+                    class="animate__animated animate__bounceInDown"
+                >
+                    <i class="fa-solid fa-moon"></i>
+                </li>
+                <li
+                    id="light-mode"
+                    class="animate__animated animate__bounceInDown"
+                >
+                    <i class="fa-solid fa-sun"></i>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="input-container">
+            <h1 class="input-header animate__animated animate__fadeIn">
+                Planning and Do it...
+            </h1>
+            <div class="inner animate__animated animate__fadeInLeft">
+                <input type="text" name="input" id="input" />
+                <div class="btn-container">
+                    <button id="add-btn">Add</button>
+                    <button id="save-btn">Save</button>
+                    <button id="clear-btn">Clear</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p id="show-tasks">tasks <i class="fa-solid fa-sort"></i></p>
+            <ul id="tasks"></ul>
+        </div>
+    </body>
+</html>

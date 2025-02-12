@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: "Abril Fatface", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+:root {
+    --light-back: #d6d7d8cc;
+    --light-items: #ffffff;
+    --light-main-text: #343a40;
+    --light-alt-text: #6c757d;
+    --light-comp-btn: #0d6efd;
+    --light-remove-btn: #dc3545;
+    --light-edit-btn: #ffc107;
+
+    --dark-back: #212529;
+    --dark-items: #343a40;
+    --dark-main-text: #e9ecef;
+    --dark-alt-text: #adb5bd;
+    --dark-comp-btn: #0dcaf0;
+    --dark-remove-btn: #ff4d4d;
+    --dark-edit-btn: #ffd43b;
+}
+
+button {
+    border: none;
+    padding: 0.5rem 1.6rem;
+    border-radius: 1rem;
+}
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    padding: 0.6rem 2rem;
+    border-radius: 1rem;
+    font-size: large;
+}
+input:focus {
+    border: none;
+    outline: none;
+}
+
+.dark-mode {
+    background-color: var(--dark-back);
+    color: var(--dark-main-text);
+}
+
+.light-add-btn {
+    background-color: var(--light-comp-btn);
+}
+.light-remove-btn {
+    background-color: var(--light-remove-btn);
+}
+.light-edit-btn {
+    background-color: var(--light-edit-btn);
+}
+
+.dark-add-btn {
+    background-color: var(--dark-comp-btn);
+}
+.dark-remove-btn {
+    background-color: var(--dark-remove-btn);
+}
+.dark-edit-btn {
+    background-color: var(--dark-edit-btn);
+}
+
+body {
+    background-color: var(--light-back);
+    color: var(--light-main-text);
+}
+
+header {
+    text-align: center;
+    background-color: var(--light-items);
+    padding: 2rem 1rem;
+    font-size: larger;
+}
+
+#theme-mode {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: baseline;
+    gap: 1.2rem;
+    font-size: x-large;
+    margin: 1rem 2rem;
+}
+
+#dark-mode:hover {
+    color: var(--light-comp-btn);
+    cursor: pointer;
+}
+#light-mode:hover {
+    color: var(--light-edit-btn);
+    cursor: pointer;
+}
+
+.input-header {
+    color: var(--light-alt-text);
+}
+
+.input-container {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.2rem;
+}
+
+#add-btn {
+    background-color: var(--light-comp-btn);
+    color: white;
+}
+
+#input {
+    color: var(--light-alt-text);
+}
+
+#tasks {
+    margin-top: 1rem;
+    font-size: large;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#tasks li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#tasks li div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#tasks li div i:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#tasks li {
+    padding: 1.2rem 1rem;
+    border-radius: 0.6rem;
+}
+
+#show-tasks {
+    color: var(--light-alt-text);
+    text-align: center;
+    margin-top: 5rem;
+    border-bottom: 2px solid var(--light-alt-text);
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem 0.5rem;
+}
+
+#show-tasks:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#save-btn {
+    background-color: rgb(0, 188, 0);
+    color: var(--light-items);
+}
+
+#clear-btn {
+    background-color: var(--light-remove-btn);
+    color: var(--light-items);
+}
