@@ -11,6 +11,7 @@ To run this project locally:
 ```bash
 git clone https://github.com/your-username/todo-app.git
 cd todo-app
+```
 
 ⚙️ Tech Stack
 Javascript
