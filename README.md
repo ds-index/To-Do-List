@@ -13,16 +13,16 @@ git clone https://github.com/your-username/todo-app.git
 cd todo-app
 ```
 
-⚙️ Tech Stack
+⚙️ Tech Stack:
 Javascript
 HTML
 CSS
 
-✨ Features
+✨ Features:
 Add, edit, and delete tasks
 Mark tasks as completed or pending
 Data is persisted in the database
 Fully responsive design
 
-📄 License
+📄 License:
 This project is licensed under the MIT License — feel free to use it and modify as needed 🌱
