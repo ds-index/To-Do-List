@@ -26,3 +26,5 @@ Fully responsive design
 
 📄 License:
 This project is licensed under the MIT License — feel free to use it and modify as needed 🌱
+
+👨‍💻 Author: Built with ❤️ by ArManDS
